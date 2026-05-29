@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PagFast | Plataforma Segura de Pagamentos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --pf-primary: #0d6efd;
+      --pf-dark: #0b1f3a;
+      --pf-light: #f8fbff;
+    }
+
+    body {
+      background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+    }
+
+    .navbar {
+      backdrop-filter: blur(10px);
+    }
+
+    .hero {
+      background: radial-gradient(circle at top right, rgba(13,110,253,0.18), transparent 32%),
+                  linear-gradient(135deg, #0b1f3a 0%, #123a6f 60%, #0d6efd 100%);
+      color: #fff;
+      border-radius: 1.5rem;
+    }
+
+    .feature-icon {
+      width: 3.25rem;
+      height: 3.25rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+      background: rgba(13,110,253,0.10);
+      color: var(--pf-primary);
+      font-size: 1.35rem;
+    }
+
+    .section-title {
+      color: var(--pf-dark);
+      font-weight: 700;
+    }
+
+    .card {
+      border: 0;
+      box-shadow: 0 0.5rem 1.5rem rgba(15, 23, 42, 0.08);
+    }
+
+    .badge-soft {
+      background: rgba(255,255,255,0.14);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.16);
+    }
+
+    footer {
+      color: #5b6b80;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="#">
+      <i class="bi bi-shield-lock-fill me-2"></i>PagFast
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#seguranca">Segurança</a></li>
+        <li class="nav-item"><a class="nav-link" href="#infraestrutura">Infraestrutura</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-4 my-lg-5">
+  <section class="hero p-4 p-lg-5 shadow-lg">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="badge badge-soft rounded-pill px-3 py-2 mb-3">Alta disponibilidade para pagamentos online</span>
+        <h1 class="display-5 fw-bold mb-3">PagFast: infraestrutura segura para transações rápidas e estáveis.</h1>
+        <p class="lead mb-4">
+          A PagFast é uma plataforma fictícia criada para demonstrar uma arquitetura Linux com foco em segurança,
+          organização de arquivos, automação de serviços e publicação web.
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="#infraestrutura" class="btn btn-light btn-lg text-primary fw-semibold">Ver infraestrutura</a>
+          <a href="#contato" class="btn btn-outline-light btn-lg">Falar com o time</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card bg-white text-dark p-4 rounded-4">
+          <div class="d-flex align-items-center mb-3">
+            <div class="feature-icon me-3"><i class="bi bi-clock-history"></i></div>
+            <div>
+              <h5 class="mb-0">Monitoramento contínuo</h5>
+              <small class="text-muted">Serviços essenciais sob observação</small>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div class="feature-icon me-3"><i class="bi bi-lock-fill"></i></div>
+            <div>
+              <h5 class="mb-0">Acesso controlado</h5>
+              <small class="text-muted">Permissões e grupos bem definidos</small>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="feature-icon me-3"><i class="bi bi-boxes"></i></div>
+            <div>
+              <h5 class="mb-0">Publicação simples</h5>
+              <small class="text-muted">HTML estático servido via container</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="py-5">
+    <div class="text-center mb-4">
+      <h2 class="section-title">O que a PagFast entrega</h2>
+      <p class="text-muted mb-0">Uma vitrine simples para simular um sistema de pagamentos com boa base de infraestrutura.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body p-4">
+            <div class="feature-icon mb-3"><i class="bi bi-currency-exchange"></i></div>
+            <h5 class="card-title">Pagamentos rápidos</h5>
+            <p class="card-text text-muted">
+              Estrutura pensada para representar disponibilidade e resposta ágil em um serviço crítico.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body p-4">
+            <div class="feature-icon mb-3"><i class="bi bi-shield-check"></i></div>
+            <h5 class="card-title">Segurança operacional</h5>
+            <p class="card-text text-muted">
+              Pastas protegidas, usuários restritos e separação entre administração e acesso comum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body p-4">
+            <div class="feature-icon mb-3"><i class="bi bi-gear-wide-connected"></i></div>
+            <h5 class="card-title">Automação</h5>
+            <p class="card-text text-muted">
+              Um script Bash monitora o serviço e ajuda a manter a aplicação disponível.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="seguranca" class="py-2 py-lg-4">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="section-title mb-3">Segurança e controle de acesso</h2>
+        <p class="text-muted">
+          A PagFast foi criada para demonstrar o uso de grupos, permissões e usuários restritos no Linux.
+          A área de auditoria é protegida para representar informações internas da empresa.
+        </p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-transparent px-0"><i class="bi bi-check-circle-fill text-success me-2"></i>Usuário administrativo com acesso controlado.</li>
+          <li class="list-group-item bg-transparent px-0"><i class="bi bi-check-circle-fill text-success me-2"></i>Usuário restrito sem permissão nas pastas críticas.</li>
+          <li class="list-group-item bg-transparent px-0"><i class="bi bi-check-circle-fill text-success me-2"></i>Separação clara entre público, logs e auditoria.</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div class="card p-4">
+          <h5 class="fw-bold mb-3">Ambiente da infraestrutura</h5>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="p-3 rounded-4 bg-light">
+                <strong>app/public</strong>
+                <div class="text-muted small">Arquivos públicos da aplicação</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 rounded-4 bg-light">
+                <strong>app/logs</strong>
+                <div class="text-muted small">Registros e logs do sistema</div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="p-3 rounded-4 bg-light">
+                <strong>auditoria</strong>
+                <div class="text-muted small">Pasta protegida para evidenciar permissões e acesso negado</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="infraestrutura" class="py-5">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Infraestrutura sob medida</h2>
+      <p class="text-muted mb-0">A parte principal do projeto é provar que o sistema operacional organiza, protege e mantém o serviço em funcionamento.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <div class="card-body p-4">
+            <h5 class="card-title">1. Organização</h5>
+            <p class="card-text text-muted">
+              Estrutura de diretórios criada por terminal para simular um ambiente real de produção.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <div class="card-body p-4">
+            <h5 class="card-title">2. Permissões</h5>
+            <p class="card-text text-muted">
+              Controle de acesso com dono, grupo e outros usuários, refletindo a política de segurança da empresa.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <div class="card-body p-4">
+            <h5 class="card-title">3. Disponibilidade</h5>
+            <p class="card-text text-muted">
+              Script de monitoramento e container web para manter a aplicação acessível com simplicidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="py-4">
+    <div class="card p-4 p-lg-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <h2 class="section-title mb-3">Contato institucional</h2>
+          <p class="text-muted mb-0">
+            Esta seção é apenas ilustrativa para dar aparência de site real. No projeto, o que importa é a infraestrutura Linux
+            que sustenta essa página estática.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" placeholder="Seu nome">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-control" placeholder="seuemail@exemplo.com">
+            </div>
+            <button type="button" class="btn btn-primary w-100">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+    <div>© 2026 PagFast — Projeto acadêmico de infraestrutura Linux.</div>
+    <div class="d-flex gap-3">
+      <span><i class="bi bi-shield-lock me-1"></i>Segurança</span>
+      <span><i class="bi bi-lightning-charge me-1"></i>Disponibilidade</span>
+      <span><i class="bi bi-server me-1"></i>Infraestrutura</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
